@@ -4,20 +4,20 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/styles.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/54130d9fbe.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/54130d9fbe.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <title>🌧WeatherApp🌩</title>
+	<title>🌧WeatherApp🌩</title>
 </head>
 
 <body>
@@ -25,95 +25,98 @@
 		<div class="wrapper">
 			<h1>🌧WeatherApp🌩</h1>
 			<div class="align">
-					<div class="grid">
+				<div class="grid">
 
-							<form action="" method="get" class="search" id="search-form">
+					<form action="" method="get" class="search" id="search-form">
 
-									<div class="form__field">
-											<input type="search" name="search" placeholder="Enter your city" class="form__input" id="form-input">
-											<input type="submit" value="Search" class="button search" id="search">
-									</div>
+						<div class="form__field">
+							<input type="search" name="search" placeholder="Enter your city" class="form__input"
+								id="form-input">
+							<input type="submit" value="Search" class="button search" id="search">
+						</div>
 
-							</form>
-							<p>
-							<div class="container">
-									<div class="general-info">
-											Precipitation: 79%
-											<br />
-											Wind: 8km/h
-											<br />
-											<div class="clouds">
-													Clouds
-											</div>
-									</div>
-									<i class="fa-solid fa-cloud-sun main-icon"></i>
-									<div class="temp" id="temperature">
-											15 °C
-									</div>
-
-									<div class="chosen-city" id="chosen-city">
-											Kyiv
-									</div>
-									<h2 id="current-day-time">
-											Monday, 20:33
-									</h2>
-
-									<div class="row">
-											<div class="col next-days">
-													Sun
-													<br />
-													<i class="fa-solid fa-sun icon"></i>
-											</div>
-											<div class="col next-days">
-													Mon
-													<br />
-													<i class="fa-solid fa-cloud-bolt icon"></i>
-											</div>
-											<div class="col next-days">
-													Tue
-													<br />
-													<i class="fa-solid fa-cloud-sun icon"></i>
-											</div>
-											<div class="col next-days">
-													Wed
-													<br />
-													<i class="fa-solid fa-cloud-rain icon"></i>
-											</div>
-											<div class="col next-days">
-													Thu
-													<br />
-													<i class="fa-solid fa-cloud-rain icon"></i>
-											</div>
-									</div>
-									<div class="row">
-											<div class="col celsius">
-													18℃
-											</div>
-											<div class="col celsius">
-													12℃
-											</div>
-											<div class="col celsius">
-													15℃
-											</div>
-											<div class="col celsius">
-													16℃
-											</div>
-											<div class="col celsius">
-													13℃
-											</div>
-									</div>
-									</p>
+					</form>
+					<p>
+					<div class="container">
+						<div class="general-info">
+							Precipitation: 79%
+							<br />
+							Wind: 8km/h
+							<br />
+							<div class="clouds">
+								Clouds
 							</div>
+						</div>
+						<i class="fa-solid fa-cloud-sun main-icon"></i>
+						<div class="temp" id="temperature">
+							15 °C
+						</div>
+
+						<div class="chosen-city" id="chosen-city">
+							Kyiv
+						</div>
+						<h2 id="current-day-time">
+							Monday, 20:33
+						</h2>
+
+						<div class="row">
+							<div class="col next-days">
+								Sun
+								<br />
+								<i class="fa-solid fa-sun icon"></i>
+							</div>
+							<div class="col next-days">
+								Mon
+								<br />
+								<i class="fa-solid fa-cloud-bolt icon"></i>
+							</div>
+							<div class="col next-days">
+								Tue
+								<br />
+								<i class="fa-solid fa-cloud-sun icon"></i>
+							</div>
+							<div class="col next-days">
+								Wed
+								<br />
+								<i class="fa-solid fa-cloud-rain icon"></i>
+							</div>
+							<div class="col next-days">
+								Thu
+								<br />
+								<i class="fa-solid fa-cloud-rain icon"></i>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col celsius">
+								18℃
+							</div>
+							<div class="col celsius">
+								12℃
+							</div>
+							<div class="col celsius">
+								15℃
+							</div>
+							<div class="col celsius">
+								16℃
+							</div>
+							<div class="col celsius">
+								13℃
+							</div>
+						</div>
+						</p>
 					</div>
 				</div>
-				<button class="btn" id="current-button"> Show current location </button>
-				<footer> Coded by Anastasiia Lykhohrai⚡</footer>
-	</div>
+			</div>
+			<button class="btn" id="current-button"> Show current location </button>
+			<footer> <a id="open-source-link" href="https://github.com/presdesarcasme/my-app"> Open-source code </a> by
+				Anastasiia Lykhohrai⚡
+			</footer>
+		</div>
 	</div>
 
 	<script src="src/index.js">
 	</script>
-	
+
 </body>
 
 </html>
